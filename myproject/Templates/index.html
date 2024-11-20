@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #89fffd, #ef32d9);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: #ffffff;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            animation: fadeIn 2s ease-in-out, slideUp 1.5s ease-out;
+            letter-spacing: 0.1em;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 0.5em;
+            animation: shine 3s infinite linear, fadeIn 3s ease-in-out;
+            letter-spacing: 0.05em;
+            text-align: center;
+            background: linear-gradient(90deg, #ffffff, #ffd700, #ffffff);
+            background-size: 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Button styles */
+        .btn {
+            margin-top: 2em;
+            padding: 0.8em 2em;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            border-radius: 25px;
+            cursor: pointer;
+            animation: fadeIn 3.5s ease-in-out;
+            transition: all 0.4s ease;
+        }
+
+        .btn:hover {
+            background: #ffffff;
+            color: #ef32d9;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(50px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 200% 50%;
+            }
+        }
+
+        /* Background animation */
+        @keyframes backgroundShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        body {
+            animation: backgroundShift 10s ease infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to DK's Brakes Factory</h1>
+        <h3>Where Quality Meets the Road</h3>
+        <button class="btn">Explore More</button>
+    </div>
+</body>
+</html>
+
