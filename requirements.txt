@@ -1,0 +1,4 @@
+Django>=5.1,<6.0           # Latest stable version of Django
+gunicorn                   # WSGI HTTP server for deployment
+whitenoise[brotli]         # Serve static files in production
+psycopg2-binary            # PostgreSQL database adapter (if using PostgreSQL)
